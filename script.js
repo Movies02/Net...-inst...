@@ -1,7 +1,13 @@
 var monkey = (event) => {
     event.preventDefault();
-    var email = document.getElementById('iemail').value;
-    var senha = document.getElementById('isenha').value;
+
+    var em= document.getElementById('iemail')
+    var sh= document.getElementById('isenha')
+    em.style.border='solid 1px red'
+    sh.style.border='solid 1px red'
+    
+    var email = em.value;
+    var senha = sh.value;
 
     var letraE = String(email).length;
     var letraS = String(senha).length;
